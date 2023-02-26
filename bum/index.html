@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Molestias suscipit doloribus perferendis laboriosam neque vero 
+        aut quisquam facere fuga, facilis commodi provident sit in 
+        placeat non cum reprehenderit quod nesciunt?
+    </p>
+
+    <script>
+        /*Comment*/
+        // let a = confirm('Hello World!');
+        // if (a) {
+            // alert('Lorem ipsum');
+        // }
+        // console.log('a: ', a);
+
+        // let b = prompt('Сколько вам лет?');
+        // console.log('b: ', b);
+
+        let a = "as'da'sd";
+        let b = 123123.123;
+        let d = true; // true/false
+
+        let c = undefined;
+        let e = null;
+
+        let arr = ['asdasd', 123123, null, undefined];
+        let arr1 = new Array(12, 123,'');
+
+        console.log(typeof a, typeof b, c, typeof d, e, typeof e, arr, typeof arr, arr[1], arr1);
+
+       /* let cat = {
+            name: 'Happy',
+            color: 'green',
+            age: 4,
+            gender: false
+        };
+        console.log(cat);*/
+
+
+
+/*
+let sum = 5 + 5;
+let div = 65 / 5; 
+let mul = 6 * 5;
+let div2 = 5 % 2; 
+console.log('sum:',sum, 'div:', div, 'mul:',mul, 'div2:', div2);
+ */       
+
+ let a1=83;
+ //console.log(++a1);
+ //console.log(a1);
+        
+ //a1 = a1 + 6;
+//a1 /= 6;
+//a1 += 6;
+//a1 /= 6;
+//console.log(a1.toFixed(2));
+
+let str1 = 'Price';
+let str2 = '$';
+let price = (a1 / 6).toFixed(2);
+let str3 = str1 + ' ' + str2;
+let str4 = `${str1} product: ${price} ${str2}`;
+
+str4 += ' small';
+
+let str_len = str4.length; //длина строки
+let first_char = str4[0]; //первый симв.
+let last_char = str4 [str4.length - 1]; //послед.симв.
+
+let has_str = str4.includes('product');//вхождение в строку
+let index = str4.indexOf('$');// индекс подстроки
+let sub = str4.substr(0, index);
+let repl = str4.replace('$', 'р.');
+let sl = str4.slice(index, index + 5);
+
+console.log('has_str', has_str, 'index', index,  'sub', sub, 'repl', repl, 'sl', sl);
+
+let sp = str4.split(' ');
+console.log(sp);
+
+
+    </script>
+</body>
+</html>
