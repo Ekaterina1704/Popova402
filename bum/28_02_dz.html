@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let str1 = 'Киокусинкай – это поиск «абсолютной истины» на пути воинского искусства, способствующий раскрытию резервных возможностей человека, - физических, психических и духовных. Как «сильнейшее каратэ» его отличает атлетический, силовой, динамичный, реально контактный стиль ведения поединка. Киокусинкай в Перми появилось в 1976 году. Существующая ныне Федерация Киокусинкай Пермского края приобрела общепризнанную известность, укрепила и расширила свои ряды и географию развития в регионах края, сложились стойкие традиции Пермской школы Киокусинкай, одной из ведущих в России. Особенность школы – сочетание традиционных методов тренировок в каратэ и лучших методических достижений Российского спорта.';
+let predl = str1.replaceAll('и', '*');
+console.log('str1',str1);
+console.log( 'str1.predl',predl); //1 задание
+
+let index= str1.indexOf('Как');
+let pr1 = str1.substr(0, index);
+console.log('pr1', pr1); // 2 задание
+
+let index2= str1.indexOf('Особенность');
+let prp = str1.substr(index2);
+console.log('prp', prp); //3 задание
+
+let index3 = str1.indexOf('России');
+let slov = str1.slice(index3, index3 + 6);
+console.log('slov',slov);//4 задание
+       </script>
+</body>
+</html>
